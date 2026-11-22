@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Multiplication Table Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Multiplication Table Generator</h1>
+    <form id="exercise" novalidate>
+      <label for="number">Enter a number</label>
+      <input id="number" type="number" step="any">
+      <button type="submit">Generate Table</button>
+    </form>
+    <p id="result" aria-live="polite"></p>
+    <table id="timesTable" hidden>
+      <thead><tr><th scope="col">Multiplication</th></tr></thead>
+      <tbody id="tableRows"></tbody>
+    </table>
+  </main>
+</body>
+</html>
